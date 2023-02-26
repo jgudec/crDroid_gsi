@@ -25,7 +25,7 @@ To do that, run these commands:
 
 ### Clone the Manifest to add necessary dependencies for gsi:
  
-    git clone https://github.com/naz664/treble_manifest.git .repo/local_manifests  -b 13
+    git clone https://github.com/jgudec/treble_manifest_naz.git .repo/local_manifests  -b 13
   
 
 

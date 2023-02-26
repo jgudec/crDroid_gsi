@@ -1,0 +1,27 @@
+From 7f40bca51ba6c5f8bf4b5168aad5ab94ebae33a3 Mon Sep 17 00:00:00 2001
+From: jgudec <jakov.gudec@gmail.com>
+Date: Sun, 26 Feb 2023 13:12:22 +0000
+Subject: [PATCH] Remove duplicate inCryptKeeperBounce method
+
+---
+ core/java/android/os/storage/StorageManager.java | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/core/java/android/os/storage/StorageManager.java b/core/java/android/os/storage/StorageManager.java
+index c610a6862864..b5e6ee963f62 100644
+--- a/core/java/android/os/storage/StorageManager.java
++++ b/core/java/android/os/storage/StorageManager.java
+@@ -1698,10 +1698,6 @@ public class StorageManager {
+         return RoSystemProperties.CRYPTO_ENCRYPTED;
+     }
+ 
+-    public static boolean inCryptKeeperBounce() {
+-        return false;
+-    }
+-
+     /** {@hide}
+      * Is this device file encrypted?
+      * @return true for file encrypted. (Implies isEncrypted() == true)
+-- 
+2.17.1
+
